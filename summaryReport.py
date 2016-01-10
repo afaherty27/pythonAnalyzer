@@ -1,3 +1,4 @@
+__author__ = 'afaherty'
 import os
 import datetime
 

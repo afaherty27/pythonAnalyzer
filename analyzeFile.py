@@ -1,3 +1,4 @@
+__author__ = 'afaherty'
 from summaryReport import summaryProcessTokens
 from summaryReport import summaryWriteOutputFile
 
