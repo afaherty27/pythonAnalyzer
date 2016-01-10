@@ -4,14 +4,14 @@ from summaryReport import summaryWriteOutputFile
 
 # input to hold file
 print('enter file to read:')
-fileName = input()
+file_name = input()
 
 # open file to read
-with open(fileName, 'r') as textFile :
+with open(file_name, 'r') as text_file :
 
-    words = textFile.read().split()
+    words = text_file.read().split()
     #works for small file. not large
 
     summaryProcessTokens(words)
-    summaryWriteOutputFile(textFile)
+    summaryWriteOutputFile(text_file)
     
