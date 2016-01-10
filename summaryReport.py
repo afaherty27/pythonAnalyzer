@@ -4,33 +4,33 @@ import datetime
 
 #This module counts how many words are in the file that is analyzed
 
-tokenCount = []
-wordCount = 0
+token_count = []
+word_count = 0
 
 # process list of words to get a count of how many are in the list
-def summaryProcessTokens(words) :
+def summary_process_tokens(words) :
 
-	global wordCount
-	wordCount = len(words)
+	global word_count
+	word_count = len(words)
 
 # write output file containing summary of file analysis
-def summaryWriteOutputFile(textFile) :
+def summary_write_output_file(text_file) :
 
 	statement = 'Application: Python Analyzer\n'
 	author = 'Author: Adam Faherty\n'
-	analyzedFile = 'Input File: ' + str(textFile.name) + '\n'
-	currentTime = 'Analyed on: ' + str(datetime.datetime.now()) + '\n'
-	result = 'Word Count: '+ str(wordCount)
+	analyzed_file = 'Input File: ' + str(text_file.name) + '\n'
+	current_time = 'Analyed on: ' + str(datetime.datetime.now()) + '\n'
+	result = 'Word Count: '+ str(word_count)
 
-	filePath = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/summaryReport.txt'
-	mode = 'a' if os.path.exists(filePath) else 'w+'
+	file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/summaryReport.txt'
+	mode = 'a' if os.path.exists(file_path) else 'w+'
 
-	with open(filePath, mode) as file :
+	with open(file_path, mode) as file :
 
 		file.seek(0)
 		file.truncate() #clears file if it exists already
 		file.write(statement)
 		file.write(author)
-		file.write(analyzedFile)
-		file.write(currentTime)
+		file.write(analyzed_file)
+		file.write(current_time)
 		file.write(result)
