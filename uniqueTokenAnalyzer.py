@@ -2,8 +2,13 @@ __author__ = 'afaherty'
 
 import os
 
-def unique_process_tokens() :
-    # TODO process tokens from list into a sorted list and remove duplicates
+# This module parses the word list, and finds the unique words in the list
+unique_words = []
+
+def unique_process_tokens(words) :
+
+    global unique_words
+    unique_words = list(set(words))
 
 
 def unique_token_output_file():
