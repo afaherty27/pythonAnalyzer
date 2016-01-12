@@ -19,4 +19,8 @@ different ways, and then writing a file for each processed result.
 ###summaryReport.py
 `summaryReport.py` simply processes the list of words from `analyzeFile.py` and presents a count of words within the 
 file.  This data is written to a new file called `summary.txt` for the user to view after the analyzer has completed its
-processing.
+processing
+
+###uniqueTokensAnalyzer.py
+`uniqueTokensAnalyzer.ph` parses the list of words received from the file that has been opened, and removed the duplicates
+from the list, and displays them in a report after processing
