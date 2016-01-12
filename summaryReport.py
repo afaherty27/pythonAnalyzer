@@ -22,7 +22,7 @@ def summary_write_output_file(text_file) :
 	current_time = 'Analyed on: ' + str(datetime.datetime.now()) + '\n'
 	result = 'Word Count: '+ str(word_count)
 
-	file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/summaryReport.txt'
+	file_path = 'C:/Users/Adam/Dropbox/enterprisejava/pythonAnalyzer/summaryReport.txt'
 	mode = 'a' if os.path.exists(file_path) else 'w+'
 
 	with open(file_path, mode) as file :

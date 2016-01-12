@@ -9,7 +9,7 @@ def unique_process_tokens() :
 def unique_token_output_file():
     # TODO complete variables to complete report
 
-    file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/summaryReport.txt'
+    file_path = 'C:/Users/Adam/Dropbox/enterprisejava/pythonAnalyzer/uniqueTokens.txt'
     mode = 'a' if os.path.exists(file_path) else 'w+'
 
     with open(file_path, mode) as file :
