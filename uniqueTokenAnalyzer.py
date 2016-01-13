@@ -2,23 +2,25 @@ __author__ = 'afaherty'
 
 import os
 
-# This module parses the word list, and finds the unique words in the list
-unique_words = []
+word_set = []
 
+# removed duplicate instances of words in list
 def unique_process_tokens(words) :
 
-    global unique_words
-    unique_words = list(set(words))
+    global word_set
+    word_set = list(set(words))
 
 
-def unique_token_output_file():
-    # TODO complete variables to complete report
+#writes output file of words list
+def unique_token_output_file(text_file):
 
-    file_path = 'C:/Users/Adam/Dropbox/enterprisejava/pythonAnalyzer/uniqueTokens.txt'
+    file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/uniqueTokens.txt'
     mode = 'a' if os.path.exists(file_path) else 'w+'
 
     with open(file_path, mode) as file :
 
         file.seek(0)
         file.truncate() #clears file if it exists already
-        # TODO complete file.write() for report
+        word_set.sort()
+        for word in word_set :
+            file.write(word + '\n')
