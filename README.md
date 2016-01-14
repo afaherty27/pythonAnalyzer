@@ -24,3 +24,7 @@ processing
 ###uniqueTokensAnalyzer.py
 `uniqueTokensAnalyzer.ph` parses the list of words received from the file that has been opened, and removed the duplicates
 from the list, and displays them in a report after processing
+
+###bigwordAnalyzer.py
+`bigwordAnalyzer.py` parses the list of words received from the file that has been opened and removes the words from the
+list that do not meet a minimum length determined within the code
