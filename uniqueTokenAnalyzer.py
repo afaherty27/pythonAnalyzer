@@ -12,7 +12,7 @@ def unique_process_tokens(words) :
 
 
 #writes output file of words list
-def unique_token_output_file(text_file):
+def unique_token_output_file():
 
     file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/output/uniqueTokens.txt'
     mode = 'a' if os.path.exists(file_path) else 'w+'
