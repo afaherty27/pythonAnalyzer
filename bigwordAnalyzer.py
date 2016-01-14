@@ -12,12 +12,12 @@ def bigword_process_tokens(words) :
     for word in words :
 
         if len(word) >= minimum_word_length :
-            #print(word)
+
             big_word_list.append(word)
 
 
 #prints output to bigwords.txt file
-def bigword_output_file(text_file) :
+def bigword_output_file() :
 
     file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/output/bigwords.txt'
     mode = 'a' if os.path.exists(file_path) else 'w+'
