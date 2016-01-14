@@ -26,9 +26,9 @@ def process_tokens(words) :
 
 def write_output_files(text_file) :
     summary_write_output_file(text_file)
-    unique_token_output_file(text_file)
+    unique_token_output_file()
     #keyword_output_file(text_file)
-    bigword_output_file(text_file)
+    bigword_output_file()
     #token_size_output_file(text_file)
     #token_count_output_file(text_file)
 
