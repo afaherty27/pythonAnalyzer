@@ -32,3 +32,6 @@ list that do not meet a minimum length determined within the code
 ###tokenCountAnalyzer.py
 `tokenCountAnalyzer.py` parses the words list and populates a dictionary with a word serving as they key, and the count
 of how many times that word appears in the file
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/afaherty27/pythonanalyzer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
