@@ -6,7 +6,7 @@ I have noticed several companies within my job search had Python listed as a req
 through tutorials within the Python documentation, but soon started feeling no challenge.
 
 After some thought on how I could challenge myself while learning a new programming language, I kept going back to the 
-file analyzer project I had in the Advanced Java.  Looking back, the project was a great example for learning the skills 
+file analyzer project I had in Advanced Java.  Looking back, the project was a great example for learning the skills 
 I learned that semester. The project involved reading a file, processing the contained information in the file in several
 different ways, and then writing a file for each processed result.
 
@@ -28,3 +28,7 @@ from the list, and displays them in a report after processing
 ###bigwordAnalyzer.py
 `bigwordAnalyzer.py` parses the list of words received from the file that has been opened and removes the words from the
 list that do not meet a minimum length determined within the code
+
+###tokenCountAnalyzer.py
+`tokenCountAnalyzer.py` parses the words list and populates a dictionary with a word serving as they key, and the count
+of how many times that word appears in the file
