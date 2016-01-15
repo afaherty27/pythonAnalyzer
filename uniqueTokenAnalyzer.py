@@ -1,6 +1,6 @@
 __author__ = 'afaherty'
 
-import os
+import os, re
 
 word_set = []
 
@@ -8,7 +8,16 @@ word_set = []
 def unique_process_tokens(words) :
 
     global word_set
-    word_set = list(set(words))
+
+    edited_words = []
+
+    for word in words :
+
+        word = re.sub(r'[^\w\s]', '', word)
+        edited_words.append(word)
+
+
+    word_set = list(set(edited_words))
 
 
 #writes output file of words list
