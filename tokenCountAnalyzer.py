@@ -5,6 +5,7 @@ import os, re
 # this module counts how many times each word appears in the list
 
 token_counts = {}
+longest_string = 0
 
 #creates a dictionary object that counts how many times each word is in the file
 def token_count_process_tokens(words) :
@@ -15,6 +16,16 @@ def token_count_process_tokens(words) :
 
         word = re.sub(r'[^\w\s]', '', word)
         token_counts[word] = token_counts.get(word, 0) + 1
+
+    find_longest_string_length(words)
+
+
+#determines what longest string length is for output file formating
+def find_longest_string_length(words) :
+
+    global longest_string
+    longest_string = max(len(word) for word in words)
+    print(longest_string)
 
 
 # writes results to tokenCount.txt
@@ -37,8 +48,8 @@ def token_count_output_file() :
 
             if count < len(token_counts):
 
-                file.write(word + ':\t' + str(value) + '\n')
+                file.write(word + ':'.ljust(longest_string - len(word)) + '\t' + str(value) + '\n')
 
             else :
 
-                file.write(word + ': ' + str(value))
+                file.write(word + ':'.ljust(longest_string - len(word)) + '\t' + str(value))
