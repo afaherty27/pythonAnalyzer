@@ -18,7 +18,7 @@ def token_count_process_tokens(words) :
 
 
 # writes results to tokenCount.txt
-def token_count_output_file(text_file) :
+def token_count_output_file() :
 
     file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/output/tokenCount.txt'
     mode = 'a' if os.path.exists(file_path) else 'w+'
