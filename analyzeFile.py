@@ -21,7 +21,7 @@ def process_tokens(words) :
     #keyword_process_tokens(words)
     bigword_process_tokens(words)
     #token_size_process_tokens(words)
-    #token_count_process_tokens(words)
+    token_count_process_tokens(words)
 
 
 def write_output_files(text_file) :
@@ -30,7 +30,7 @@ def write_output_files(text_file) :
     #keyword_output_file(text_file)
     bigword_output_file()
     #token_size_output_file(text_file)
-    #token_count_output_file(text_file)
+    token_count_output_file(text_file)
 
 # input to hold file
 print('enter file to read:')
@@ -40,6 +40,7 @@ file_name = input()
 with open(file_name, 'r') as text_file :
 
     words = text_file.read().split()
+
     #works for small file. not large
     process_tokens(words)
     write_output_files(text_file)
