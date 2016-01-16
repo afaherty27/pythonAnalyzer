@@ -1,4 +1,4 @@
-__author__ = 'L'
+__author__ = 'afaherty'
 
 import os, re
 from types import *
