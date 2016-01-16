@@ -25,7 +25,6 @@ def find_longest_string_length(words) :
 
     global longest_string
     longest_string = max(len(word) for word in words)
-    print(longest_string)
 
 
 # writes results to tokenCount.txt
