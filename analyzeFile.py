@@ -18,7 +18,7 @@ from tokenCountAnalyzer import  token_count_output_file
 def process_tokens(words) :
     summary_process_tokens(words)
     unique_process_tokens(words)
-    #keyword_process_tokens(words)
+    keyword_process_tokens(words)
     bigword_process_tokens(words)
     token_size_process_tokens(words)
     token_count_process_tokens(words)
