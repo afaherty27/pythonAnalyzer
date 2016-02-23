@@ -2,26 +2,29 @@ __author__ = 'afaherty'
 
 import os
 
+
 # method compares words in keyword file to words in analysis file
 def keyword_process_tokens(words) :
 
-    with open('keywords.txt', 'r') as keyword_file :
 
-        keywords = keyword_file.read().split()
+    file_path = 'C:/Users/L/Dropbox/enterprisejava/pythonAnalyzer/output/keywords.txt'
+    mode = 'a' if os.path.exists(file_path) else 'w+'
 
-        for keyword in keywords:
+    with open(file_path, mode) as file :
 
-            index_list = []
-            for index, word in enumerate(words) :
+        file.seek(0)
+        file.truncate() #clears file if it exists already
 
-                if word.lower() == keyword :
-                    index_list.append(index)
+        with open('keywords.txt', 'r') as keyword_file :
 
-            write_keyword_data(keyword, index_list)
+            keywords = keyword_file.read().split()
 
+            for keyword in keywords:
 
-def write_keyword_data(keyword, index_list) :
-    print(keyword + str(index_list))
+                index_list = []
+                for index, word in enumerate(words) :
 
-def keyword_output_file(text_file) :
-    print('hello keyword output')
+                    if word.lower() == keyword :
+                        index_list.append(index)
+
+                file.write(keyword + ' = ' + str(index_list) + '\n\n')
