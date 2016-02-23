@@ -34,7 +34,9 @@ list that do not meet a minimum length determined within the code
 of how many times that word appears in the file
 
 ##keywordAnalyzer.py
-`keywordAnalyzer.py` parses a list of predetermined word(s), and locates the index(s) of that word in the file
+`keywordAnalyzer.py` parses a list of predetermined word(s), and locates the index(s) of that word in the file.
+Currently, the goal is met, but due to my inexperience with Python, one method handles processing the data, and writing
+the output file.  I will be working on this in my free time.
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/afaherty27/pythonanalyzer/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
